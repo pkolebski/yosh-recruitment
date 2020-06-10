@@ -37,3 +37,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 
+def load_data(file_name):
+    df = pd.read_csv(file_name)
+    return df
+
+df = load_data("dataset.csv")
+pass
